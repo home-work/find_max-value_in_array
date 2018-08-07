@@ -13,8 +13,13 @@ public class FindMaxValueInArray {
         } while (size > 20);
         int[] money = new int[size];
         for (int i = 0; i < size; i++) {
-            System.out.println("Nhập vào số tiền của tỷ phú thứ " + (i + 1));
+            System.out.println("Nhập vào số thứ " + (i + 1));
             money[i] = scanner.nextInt();
+        }
+        System.out.println("Danh sách vừa nhập:");
+        for (int i = 0; i < money.length; i++) {
+            System.out.printf(money[i] + "\t");
+
         }
     }
 }
