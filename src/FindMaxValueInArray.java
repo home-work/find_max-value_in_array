@@ -19,7 +19,16 @@ public class FindMaxValueInArray {
         System.out.println("Danh sách vừa nhập:");
         for (int i = 0; i < money.length; i++) {
             System.out.printf(money[i] + "\t");
-
         }
+        int max = money[0];
+        int index = 0;
+        for (int i = 0; i < money.length; i++) {
+            if (max < money[i]) {
+                max = money[i];
+                index = i + 1;
+            }
+        }
+        System.out.println("");
+        System.out.println("Giá trị lớn nhất trong mảng là: " + max + " và đứng ở vị trí thứ: " + index);
     }
 }
